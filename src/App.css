@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NAVBAR */
+.navbar-nav a {
+  font-size: 18px;
+  font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ABOUT */
+.icontainer {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.icons {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  flex: 1 1 25rem;
+  cursor: pointer;
+}
+.about {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+/* CHECKOUT */
+.checkout {
+  font-size: 1rem;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 40%;
+}
+input {
+  border-radius: 0.4rem;
+  padding: 2px;
+  margin: 1px;
+  border: 0.1rem solid rgb(179, 175, 175);
+}
+textarea {
+  height: 13rem;
+  resize: none;
+  border: 0.1rem solid rgb(179, 175, 175);
+  border-radius: 0.4rem;
+  padding: 2px;
+  margin: 1px;
+}
+/* CONTACT */
+.contact {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.contact .box-container .box a {
+  display: block;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+#follow {
+  font-size: 2rem;
+  text-decoration: none;
+}
+/* RESPONSIVE */
+@media (max-width: 690px){
+  .card-img{
+    object-fit: cover;
+  }
+  .card{
+    margin: auto;
+    width: 85%;;
+  }
+  .product-card{
+    margin: auto;
+    padding: 1rem;
+  }
+  .contact .box{
+    padding: 0 1.5rem 0 1.5rem;
+    margin: auto;
+  }
+  .contact .box h3{
+    font-size: 22px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 543px){
+  .contact{
+    background: #000;
   }
-  to {
-    transform: rotate(360deg);
+  .contact .box h3{
+    font-size: 22px;
   }
+}
+@media (max-width: 395px){
+
 }
