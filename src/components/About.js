@@ -21,7 +21,7 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
               soluta!
             </p>
-            <a href="#" className="btn btn-outline-dark me-3">
+            <a className="btn btn-outline-dark me-3">
               Read More
             </a>
           </div>
