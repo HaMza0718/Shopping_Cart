@@ -28,9 +28,9 @@ const Contact = () => {
 
           <div className="box m-auto">
             <h3>Follow on</h3>
-            <a id="follow" className="fab fa-facebook"></a>
-            <a id="follow" className="fab fa-twitter"></a>
-            <a id="follow" className="fab fa-instagram"></a>
+            <a href="/#" target="#"><i className="fab fa-facebook fa-2x" /></a>
+            <a href="/#" target="#"><i className="fab fa-instagram fa-2x" /></a>
+            <a href="/#" target="#"><i className="fab fa-twitter fa-2x" /></a>
           </div>
         </div>
       </div>
