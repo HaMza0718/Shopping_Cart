@@ -17,7 +17,7 @@ const Products = () => {
         setLoading(false);
       }
       return () => {
-        componentMounted = false;
+        componentMounted.current = false;
       };
     };
     getProducts();
