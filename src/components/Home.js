@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "./Contact";
 import Products from "./Products";
 
 const Home = () => {
@@ -25,7 +24,6 @@ const Home = () => {
         </div>
       </div>
       <Products />
-      <Contact />
     </div>
   );
 };

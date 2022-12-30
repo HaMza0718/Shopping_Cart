@@ -3,34 +3,38 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <div className="container py-4">
-        <div className="row">
-          <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder text-center">Contact Us</h1>
+      <div className="contact sec-padding" id="contact">
+        <div className="container">
+          <div className="row">
+            <div className="section-title">
+              <h2 className="fw-bold">Contact Us</h2>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="contact p-5 m-auto">
-        <div className="box-container d-flex justify-content-between align-items-center">
-          <div className="box m-auto">
-            <h3>Our Branches</h3>
-            <a href="/#">Tariq Road</a>
-            <a href="/#">Hyper Star</a>
-            <a href="/#">Milinium Mall</a>
-          </div>
-
-          <div className="box m-auto">
-            <h3>Contact Info</h3>
-            <a href="/#">+923472086321</a>
-            <a href="/#">fashion.collection@gmail.com</a>
-            <a href="/#">Address: Main Branch tariq Road Karachi, Pakistan.</a>
-          </div>
-
-          <div className="box m-auto">
-            <h3>Follow on</h3>
-            <a href="/#" target="#"><i className="fab fa-facebook fa-2x" /></a>
-            <a href="/#" target="#"><i className="fab fa-instagram fa-2x" /></a>
-            <a href="/#" target="#"><i className="fab fa-twitter fa-2x" /></a>
+          <div className="row">
+            <div className="contact-img" data-aos="flip-right">
+              <div className="img-box">
+                <h3 className="font">Contact Now</h3>
+                <img src="/images/contact.jpg" alt="contact" />
+              </div>
+            </div>
+            <div className="contact-text" data-aos="flip-left">
+              <div className="contact-form">
+                <h3>Welcome To Fashio|\|ova🧥</h3>
+                <form action="">
+                  <input type="text" className="name" placeholder="Name" />
+                  <input type="email" className="email" placeholder="E-mail" />
+                  <input
+                    type="number"
+                    className="Contact-no"
+                    placeholder="Contact No"
+                  />
+                  <input type="text" id="message" placeholder="Your Message" />
+                </form>
+                <button className="btn btn-outline-dark m-2 fw-bolder w-50">
+                  Send Message
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

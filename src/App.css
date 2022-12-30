@@ -1,10 +1,47 @@
-*{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+}
+:root {
+  --dark: #0c1023;
+  --dark-light: #191f3a;
+  --white: #ffffff;
+  --white-light: #c8c8c8;
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  --cursive-font: "Dancing Script", cursive;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+.section-title {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: var(--dark);
+  border: none;
+}
+.section-title h2 {
+  font-size: 35px;
 }
 /* NAVBAR */
 .navbar-nav a {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 /* ABOUT */
 .icontainer {
@@ -18,14 +55,14 @@
   cursor: pointer;
 }
 .about {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow);
 }
 /* CHECKOUT */
 .checkout {
+  margin-top: 2px;
   font-size: 1rem;
   text-transform: none;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   border-radius: 1rem;
   width: 40%;
 }
@@ -33,59 +70,132 @@ input {
   border-radius: 0.4rem;
   padding: 2px;
   margin: 1px;
-  border: 0.1rem solid rgb(179, 175, 175);
+  border: 0.1rem solid var(--dark-light);
+}::placeholder{
+  color: var(--dark);
+  font-weight: bold;
 }
 textarea {
   height: 13rem;
   resize: none;
-  border: 0.1rem solid rgb(179, 175, 175);
+  border: 0.1rem solid var(--dark-light);
   border-radius: 0.4rem;
   padding: 2px;
   margin: 1px;
 }
 /* CONTACT */
-.contact {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+.contact-text {
+  width: 40%;
+  padding: 0 15px;
 }
-.contact .box-container .box a {
-  display: block;
-  color: #666;
-  font-size: 1.1rem;
-  padding: 1rem 0;
+.contact-img {
+  width: 60%;
+  padding: 0 15px;
 }
-#follow {
-  font-size: 2rem;
-  text-decoration: none;
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-text h3 {
+  font-size: 30px;
+  margin: 0 0 15px;
+}
+.contact-form form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-form form input {
+  width: 85%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid var(--dark);
+  border-radius: 15px;
+}
+#message {
+  height: 100px;
+}
+.contact-form form input::placeholder {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 17px;
+}
+.contact-form button {
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  border-radius: 15px;
+}
+.contact-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.contact-img .img-box {
+  position: relative;
+}
+.font {
+  font-family: var(--cursive-font);
+}
+.contact-img .img-box::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 3px dotted var(--white);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  animation: spin01 10s linear infinite;
+}
+.contact-img .img-box h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: var(--cursive-font);
+  font-weight: bolder;
+  color: var(--white);
+}
+@keyframes spin01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* RESPONSIVE */
-@media (max-width: 690px){
-  .card-img{
+@media (max-width: 690px) {
+  .card-img {
     object-fit: cover;
   }
-  .card{
+  .card {
     margin: auto;
-    width: 85%;;
+    width: 85%;
   }
-  .product-card{
+  .product-card {
     margin: auto;
     padding: 1rem;
   }
-  .contact .box{
+  .contact .box {
     padding: 0 1.5rem 0 1.5rem;
     margin: auto;
   }
-  .contact .box h3{
+  .contact .box h3 {
     font-size: 22px;
   }
 }
-@media (max-width: 543px){
-  .contact{
+@media (max-width: 543px) {
+  .contact {
     background: #000;
   }
-  .contact .box h3{
+  .contact .box h3 {
     font-size: 22px;
   }
 }
-@media (max-width: 395px){
-
+@media (max-width: 395px) {
 }
