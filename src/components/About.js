@@ -5,9 +5,9 @@ const About = () => {
     <div>
       <div className="container">
         <div className="row">
-        <div className="section-title ">
-          <h2 className="fw-bold">About Us</h2>
-        </div>
+          <div className="section-title ">
+            <h2 className="fw-bold">About Us</h2>
+          </div>
         </div>
       </div>
       <div className="about mx-5 p-3">

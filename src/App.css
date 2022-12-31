@@ -49,12 +49,9 @@ img {
   gap: 1.5rem;
 }
 .icons {
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   flex: 1 1 25rem;
   cursor: pointer;
-}
-.about {
   box-shadow: var(--shadow);
 }
 /* CHECKOUT */
@@ -71,7 +68,8 @@ input {
   padding: 2px;
   margin: 1px;
   border: 0.1rem solid var(--dark-light);
-}::placeholder{
+}
+::placeholder {
   color: var(--dark);
   font-weight: bold;
 }
@@ -168,6 +166,66 @@ textarea {
     transform: rotate(360deg);
   }
 }
+/* SIGNIN */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+}
+.Auth-form {
+  width: 420px;
+  box-shadow: var(--shadow);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: var(--dark);
+  font-weight: 800;
+}
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-light);
+}
+/* FOOTER */
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: var(--shadow);
+}
+.footer .box-container .box h3{
+    color: var(--dark);
+    font-size: 2rem;
+    padding:1rem 0;
+}
+.footer .box-container .box a{
+  display: block;
+  color:var(--dark-light);
+  font-size: 1.2rem;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .box-container .box a:hover{
+  color:var(--dark);
+  text-decoration: underline;
+  cursor: progress;
+}
+#follow{
+  font-size: 2rem;
+  color: var(--dark);
+}
 /* RESPONSIVE */
 @media (max-width: 690px) {
   .card-img {
@@ -196,6 +254,4 @@ textarea {
   .contact .box h3 {
     font-size: 22px;
   }
-}
-@media (max-width: 395px) {
 }

@@ -5,7 +5,12 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const nstate = useSelector((state) => state.handleCart);
   return (
-    <div>
+    <div
+      style={{
+        position: "relative",
+        zIndex: 3000,
+      }}
+    >
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/">
@@ -47,7 +52,7 @@ const Navbar = () => {
             </ul>
             <div className="buttons">
               <NavLink to="/login" className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1"></i> Login
+                <i className="fa fa-sign-in me-1"></i> Sign-In
               </NavLink>
               <NavLink to="/cart" className="btn btn-outline-dark ms-2">
                 <i className="fa fa-cart-arrow-down"></i> Cart ({nstate.length})

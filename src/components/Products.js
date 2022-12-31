@@ -33,7 +33,7 @@ const Products = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-between align-items-center mb-4">
+        <div className="buttons d-flex justify-content-between align-items-center mb-4 d-sm-flex">
           <button
             className="btn btn-outline-dark me-3"
             onClick={() => setFilter(data)}
@@ -96,10 +96,10 @@ const Products = () => {
   };
   return (
     <div>
-      <div className="container py-4">
+      <div className="container">
         <div className="row">
-          <div className="col-12 mb-4">
-            <h1 className="display-6 fw-bolder text-center">Latest Products</h1>
+          <div className="section-title">
+            <h2 className="fw-bold">Latest Products</h2>
           </div>
         </div>
         <div className="product-card row justify-content-center">

@@ -31,7 +31,7 @@ const Contact = () => {
                   <input type="text" id="message" placeholder="Your Message" />
                 </form>
                 <button className="btn btn-outline-dark m-2 fw-bolder w-50">
-                  Send Message
+                  Send Message📩
                 </button>
               </div>
             </div>
