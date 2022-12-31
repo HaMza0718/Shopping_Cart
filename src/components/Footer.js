@@ -15,16 +15,16 @@ const Footer = () => {
           
           <div className="box">
             <h3>Follow on</h3>
-            <a href="" id="follow" className="fab fa-facebook"></a>
-            <a href="" id="follow" className="fab fa-twitter"></a>
-            <a href="" id="follow" className="fab fa-instagram"></a>
+            <a href="/" id="follow" className="fab fa-facebook"></a>
+            <a href="/" id="follow" className="fab fa-twitter"></a>
+            <a href="/" id="follow" className="fab fa-instagram"></a>
           </div>
 
           <div className="box">
             <h3>Contact Info</h3>
-            <a href="">Mobile No: +923472086321</a>
-            <a href="">Email: fashionova@gmail.com</a>
-            <a href="">Address: Main Branch Tariq Road Karachi, Pakistan.</a>
+            <a href="/">Mobile No: +923472086321</a>
+            <a href="/">Email: fashionova@gmail.com</a>
+            <a href="/">Address: Main Branch Tariq Road Karachi, Pakistan.</a>
           </div>
 
         </div>
