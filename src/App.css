@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
 }
 ::before,
@@ -10,7 +9,6 @@
 }
 html {
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
 }
 :root {
   --dark: #0c1023;
@@ -242,14 +240,6 @@ label {
   .contact .box {
     padding: 0 1.5rem 0 1.5rem;
     margin: auto;
-  }
-  .contact .box h3 {
-    font-size: 22px;
-  }
-}
-@media (max-width: 543px) {
-  .contact {
-    background: #000;
   }
   .contact .box h3 {
     font-size: 22px;
